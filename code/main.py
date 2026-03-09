@@ -24,8 +24,8 @@ def load_distance_file(file):   #Used only to load the distance table
             rows.append(each)
         return [header, rows]
 
-distancefile = 'distancetable.csv'  #Our CSV files
-packagefile = 'packagetable.csv'
+distancefile = './csv/distancetable.csv'  #Our CSV files
+packagefile = './csv/packagetable.csv'
 distancetable = load_distance_file(distancefile)    #Loading the distance table
 
 packagelist = list(range(1, 41))    #A list of all packages 1 through 40, and packages that need to be on certain trucks because of time constraints placed there
